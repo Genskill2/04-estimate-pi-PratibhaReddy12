@@ -3,13 +3,13 @@
 #include <math.h>
 #include <stdlib.h>
 using namespace std;
-int pi=1;
+double pi=1;
 int main()
  {
-   for(int i=2;i<=1000;++i)
+   for(int i=2;i<=10000;++i)
     {
     pi=pi*((4*i*i)/((4*i*i)-1));
     }
 cout<<"The estimated value of pi/2 is:"<<pi;
-return 0;
+return pi;
  }
